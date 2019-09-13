@@ -4,10 +4,13 @@ import React from 'react';
 import { Details } from './Details'
 import { Features } from './Features'
 
+// Styles
+import style from '../StyledComponents/StyledComponents'
+
 export const Info = ({ person }) => {
 
     return (
-        <article>
+        <style.Info>
             <h2>Features:</h2>
             <Features
                 name={person.name}
@@ -25,6 +28,6 @@ export const Info = ({ person }) => {
                 created={person.created}
                 edited={person.edited}
             />
-        </article>
+        </style.Info>
     )
 }

@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Styles
+import style from '../StyledComponents/StyledComponents'
+
 export const Features = ({
     name,
     height,
@@ -10,7 +13,7 @@ export const Features = ({
     birth_year,
     gender
 }) => (
-        <ul>
+        <style.Features>
             <li>{name}</li>
             <li>{height}</li>
             <li>{mass}</li>
@@ -19,5 +22,5 @@ export const Features = ({
             <li>{eye_color}</li>
             <li>{birth_year}</li>
             <li>{gender}</li>
-        </ul>
+        </style.Features>
     )
